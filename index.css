@@ -1,0 +1,128 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+h1, h2, h3 {
+    margin: 0px;
+}
+#container {
+    background-color: white;
+    width: 1024px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#navigator {
+    background-color: white;
+    color: white;
+    max-width: 1024px;
+    float: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    text-decoration: none;
+    .nav-button {
+        background: rgb(153, 153, 153);
+        color: white;
+        border: dashed;
+        border-color: black;
+        padding: 10px;
+        width: 110px;
+        height: 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+    }
+    .nav-button:hover {
+        opacity: 0.7;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        text-decoration: none;
+    }
+}
+#intro {
+    background-color: white;
+    max-width: 1024px;
+    float: center;
+    padding: 10px;
+    text-align: left;
+}
+#main {
+    background-color: white;
+    max-width: 1024px;
+    float: center;
+    padding: 10px;
+    text-align: left;
+}
+#photos {
+    background-color: white;
+    max-width: 1024px;
+    float: center;
+    padding: 10px;
+    text-align: center;
+}
+#socials {
+    background-color: white;
+    max-width: 1024px;
+    float: center;
+    padding: 25px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .fa {
+        padding: 10px;
+        font-size: 25px;
+        width: 25px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+    .fa:hover {
+        opacity: 0.7;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .fa-youtube {
+        background: rgb(153, 153, 153);
+        color: white;
+        border: dashed;
+        border-color: black;
+    }
+    .fa-twitter {
+        background: rgb(153, 153, 153);
+        color: white;
+        border: dashed;
+        border-color: black;
+    }
+    .fa-linkedin {
+        background: rgb(153, 153, 153);
+        color: white;
+        border: dashed;
+        border-color: black;
+    }
+    .fa-github {
+        background: rgb(153, 153, 153);
+        color: white;
+        border: dashed;
+        border-color: black;
+    }
+}
+#footer {
+    background-color: white;
+    max-width: 1024px;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-weight: bold;
+    font-size: small;
+    color:black;
+}
