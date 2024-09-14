@@ -8,6 +8,48 @@
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .flex-container {
+                display: flex;
+                align-items: center;
+            }
+            .nav-button {
+                margin-right: 10px; /* Add some space between the buttons and the image */
+            }
+            .image-container {
+                position: relative;
+                width: 100px;
+                height: 100px;
+            }
+            .image-container img {
+                width: 100px;
+                height: 100px;
+            }
+            .image-container .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: white;
+            }
+            .image-container:hover .overlay {
+                opacity: 1;
+            }
+            .image-container .text {
+                color: black;
+                font-size: 12px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <div id="container">
@@ -37,6 +79,17 @@
                     <li>old vintage electronics and tech</li>
                     <li>photography, film, and cinematography</li>
                     <li>playing and collecting video games</li>
+                    <ul>
+                        <li>The Legend of Zelda&colon; Ocarina of Time &lpar;1998&rpar;</li>
+                        <li>The Legend of Zelda&colon; Four Swords Adventures &lpar;2004&rpar;</li>
+                        <li>The Legend of Zelda&colon; Spirit Tracks &lpar;2009&rpar;</li>
+                        <li>The Legend of Zelda&colon; Breath of the Wild &lpar;2017&rpar;</li>
+                        <li>Paper Mario &lpar;2000&rpar;</li>
+                        <li>Paper Mario&colon; The Thousand&dash;Year Door &lpar;2004&rpar;</li>
+                        <li>Super Paper Mario &lpar;2007&rpar;</li>
+                        <li>Dance Dance Revolution &lpar;1998&rpar;</li>
+                        <li>Dance Dance Revolution Extreme &lpar;2002&rpar;</li>
+                    </ul>
                     <li>video game music &lpar;especially 8-bit music aka chiptune&rpar;</li>
                     <li>sweets and desserts</li>
                     <li>spending time with friends and family</li>
@@ -48,28 +101,19 @@
                     <li>tangled and unorganized cables</li>
                     <li>bitter foods &lpar;except for bitter melon, i've grown to like it&rpar;</li>
                 </ul>
-                <button type="button" class="nav-button"><a href="memes.html" target="_blank">memes</a></button> <button type="button" class="nav-button"><a href="nerd_stuff.html" target="_blank">nerd stuff</a></button>
+                <div class="flex-container">
+                    <button type="button" class="nav-button"><a href="memes.html" target="_self">memes</a></button>
+                    <button type="button" class="nav-button"><a href="nerd_stuff.html" target="_self">nerd stuff</a></button>
+                    <div class="image-container">
+                        <img width="60px" height="55px" src="images/samurai-cheems.png" alt="samurai cheems sticker">
+                        <div class="overlay">
+                            <div class="text">お前はもう死んでいる</div>
+                        </div>
+                    </div>
+                </div>
                 <p><b>a motto i like&colon;</b></p>
                 <p>“That’s my advice with dealing with writer’s block: follow the fun. If you aren’t having fun, you are doing it wrong.”</p>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Jordan Peele</p>
-                <dl>
-                    <h2>Study Tips&quest;</h2></dl>
-                    <dt><img src="images/clock-1.png"> &dash; Set a timer&sol;stopwatch</dt>
-                        <dd>ex&colon; set a timer for 40 mins and try to study for that set amount of time or start your stopwatch and take a break once it hits 40 mins</dd>
-                    <dt><img src="images/magnifying_glass_4-1.png"> &dash; Ask for help, do not be ashamed cause this is what helps you grow</dt>
-                        <dd>subject tutors, online resources, YouTube videos, etc...</dd>
-                    <dt><img src="images/calendar-2.png"> &dash; Plan ahead of time, know what to study for and when to study</dt>
-                        <dd>keep track of your assignments, highly recommend a paper or digital calendar to help with this</dd>
-                    <dt><img src="images/cd_audio_cd_a-0.png"> &dash; Listen to calming music or sounds &lpar;i.e. rain, white noise&rpar;</dt>
-                        <dd>there are all kinds of studying playlists out there</dd>
-                    <dt><img src="images/desktop_w95-0.png"> &dash; Study somewhere quiet yet comfortable</dt>
-                        <dd>most universities&sol;colleges offer study rooms and those independent study desks in the library</dd><br>
-                    <dt>Start off small, when it comes to doing practically anything you have to start somewhere, do not expect yourself to study for like 5 hours straight. Not everyone can pull a James Scholz 12 hour study session, so chill. btw you also need motivation in order to study, the couch potato lifestyle is holding you back from unlocking your true potential. And this is a message coming from someone who loves being a lazy sack of spuds.</dt>
-                </dl>
-                <a href="https://www.notion.so/b8a12f8ef05e480eb8178977279b2dc1?v=d3101a61a734417993ba4a82a2aca476&pvs=4" target="_blank" style="color: #000080; text-decoration: underline;">FREE Notion template I created and personally use for academic scheduling purposes</a>
-            </div>
-            <div id="iframe-main">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OKmYu3aRsOc?si=AfdgdYeA65zIkpmZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div id="media">
                 <img src="images/DSCF0059.JPG" alt="DSCF0059" width="242px" height="179px"> <img src="images/DSCF0084.JPG" alt="DSCF0084" width="242px" height="179px"> <img src="images/DSCF0104.JPG" alt="DSCF0104" width="242px" height="179px">
